@@ -1,0 +1,191 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 20px;
+  color: #1f2937;
+}
+
+.resume {
+  display: flex;
+  background: white;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background: #1e3a8a;
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.profile-pic img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.side-name {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f97316;
+}
+
+.side-section {
+  margin-bottom: 20px;
+}
+
+.side-section h3 {
+  border-bottom: 1px solid #f97316;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.side-section p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Center-align only some sections */
+.center-text {
+  text-align: center;
+}
+
+/* Skill Bars in Sidebar */
+.skill-bar {
+  margin-bottom: 12px;
+}
+
+.skill-bar span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.bar {
+  background: #e5e7eb;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 10px;
+  background: linear-gradient(90deg, #2563eb, #f97316);
+  width: 0;
+  transition: width 2s ease-out;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #f97316;
+  border-bottom: 2px solid #f97316;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #1e40af;
+}
+
+.job span {
+  float: right;
+  color: #f97316;
+}
+
+.job p, .job ul {
+  font-size: 14px;
+  color: #333;
+}
+
+.justify {
+  text-align: justify;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Education Layout */
+.education {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.edu-item h3 {
+  font-size: 16px;
+  color: #1e40af;
+  margin: 0;
+}
+
+.edu-item p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.edu-details {
+  font-style: italic;
+  color: #555;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fade 2s forwards;
+}
+
+.slide-up {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slide 1.5s forwards;
+}
+
+@keyframes fade {
+  to { opacity: 1; }
+}
+
+@keyframes slide {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Download Button */
+.download-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.download-btn button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.download-btn button:hover {
+  background: #f97316;
+}
